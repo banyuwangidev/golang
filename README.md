@@ -16,6 +16,8 @@ Kami menggunakan [Visual Studio Code](https://code.visualstudio.com/download) un
 
 #### Instalasi Go
 
+Sebelum kita memulai belajar Go tentu kita harus meng-install terlebih dahulu, agar kita bisa menggunakanya pada komputer kita. Panduan penginstallan sebenarnya sudah tersedia pada [situs resmi](https://golang.org/doc/install) golang, namun disini akan memberikan panduan penginstallan yang singkat, jika ingin mengetahui panduan lengkapnya kamu dapat melihat disitus resminya, pada buku ini kita menggunakan versi `go1.13.1`.
+
 #### Linux
 
 #### MacOS
