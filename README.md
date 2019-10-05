@@ -20,4 +20,11 @@ Kami menggunakan [Visual Studio Code](https://code.visualstudio.com/download) un
 
 #### MacOS
 
+1. pertama-tama kunjungi https://golang.org, download untuk Apple macOS
+2. buka installer yang tadi sudah didownload klik **continues** dan **install**
+![installer go](https://i.imgur.com/lk8lwQ3.png)
+3. check apakah go sudah terinstall atau belum dengan eksekusi command `go version`
+![check go](https://i.imgur.com/6Glg32N.png)
+4. jika tahap ketiga sukses , selamat anda siap menjadi go programmer.
+
 #### Windows
