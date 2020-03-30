@@ -43,3 +43,10 @@ Sebelum kita memulai belajar Go tentu kita harus meng-install terlebih dahulu, a
 4. jika tahap ketiga sukses , selamat anda siap menjadi go programmer.
 
 #### Windows
+
+
+#### Untuk menjalan script
+
+```
+go run <path/nama script anda>
+```
