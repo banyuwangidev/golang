@@ -126,7 +126,7 @@ func main() {
 }
 ```
 
-Kenapa harus mengunakan *<tipe data > sesuai dengan nilai yang disimpan? ini untuk memastikan tipe data dari nilai yang diakses sesuai dan kita mengetahui tipe datanya.
+Kenapa harus mengunakan `*<tipe data >` sesuai dengan nilai yang disimpan? ini untuk memastikan tipe data dari nilai yang diakses sesuai dan kita mengetahui tipe datanya.
 
 #### Manipulasi nilai melalui Pointer
 Untuk memanipulasi pointer, kita perlu memanggil(`*`) nilai kemudian mem-_assign_ (`=`) nilai baru didalamnya
