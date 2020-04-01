@@ -8,6 +8,11 @@ func main() {
 	umur = 13
 	fmt.Println("Namaku", nama, "berumur", umur, "Tahun")
 
+	// Variable Pembuangan
+	aku, _ := "Namaku El", "dan Aku Cantiqueee"
+	fmt.Println(aku)
+	// fmt.Println(_) : Error
+
 	// Pointers
 	nama = "E. Kartini"
 	var alamat *string = &nama
@@ -18,5 +23,5 @@ func main() {
 	*alamat = "Elisabeth Kartini"
 	fmt.Println(nama == *alamat) // true
 
-	// *alamat dan nama ini terhubung.
+	// variable *alamat dan nama saling terhubung.
 }

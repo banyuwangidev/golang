@@ -74,7 +74,9 @@ const <nama> <tipe data> = <nilai>
 ```
 
 ### Variable Pembuangan
-Pada Go tidak boleh ada nilai/variable yang tidak digunakan, bila ada maka Go tidak akan jalan. Variable pembuangan biasanya ditemui untuk menangani fungsi yang mengembalikan nilai lebih dari satu. Deklarasi variable pembuangan dengan mengunakan nama variable berupa underscore (`_`).
+Pada Go tidak boleh ada nilai/variable yang tidak digunakan, bila ada maka Go tidak akan jalan. Variable pembuangan biasanya ditemui untuk menangani fungsi yang mengembalikan nilai lebih dari satu.
+
+Deklarasi variable pembuangan dengan mengunakan nama variable berupa underscore (`_`).
 
 ```go
 aku,_ := "Namaku El", "dan Aku Cantiqueee"
@@ -83,9 +85,12 @@ Kenapa variable `_` disebut pembuangan ? karena saat kita meletakan nilai didala
 
 ### Pointer
 
-Pointer merupakan cara untuk mengakses alamat memory (0x0302032,contoh) pada variable. Variable pointer dideklarasikan dengan asteriks (`*`) disamping tipe data, contoh `*string`. Variable pointer berisi alamat memory, tidak berisi data sesungguhnya maka tidak bisa diassign dengan nilai selain alamat memory.
+Pointer merupakan cara untuk mengakses alamat memory (0x0302032,contoh) pada variable. Variable pointer dideklarasikan dengan asteriks (`*`) disamping tipe data, contoh `*string`. 
+
+Variable pointer berisi alamat memory, tidak berisi data sesungguhnya maka tidak bisa diassign dengan nilai selain alamat memory.
 
 Untuk mengambil alamat memori dari variable biasa mengunakan ampersand(`&`) , _address of_ (alamant dari).
+
 Untuk mengambil nilai dari alamat memory mengunakan asterik (`*`) pada variable , _value pointed by_ (nilai yang ditunjuk oleh).
 
 ```go
@@ -111,7 +116,7 @@ q == &p ( q sama dengan alamat p)
 
 Contoh dalam penerapan sederhana.
 ```go
-func add(a *int,b *int)int{
+var add = func (a *int,b *int)int{
 	return *a + *b
 }
 
@@ -137,4 +142,5 @@ var alamat *string = &nama
 fmt.Println(nama == *alamat) // true :)
 ```
 
-[WIP]
+### Footnote
+[Contoh](./main.go)
