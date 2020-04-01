@@ -83,4 +83,58 @@ Kenapa variable `_` disebut pembuangan ? karena saat kita meletakan nilai didala
 
 ### Pointer
 
+Pointer merupakan cara untuk mengakses alamat memory (0x0302032,contoh) pada variable. Variable pointer dideklarasikan dengan asteriks (`*`) disamping tipe data, contoh `*string`. Variable pointer berisi alamat memory, tidak berisi data sesungguhnya maka tidak bisa diassign dengan nilai selain alamat memory.
+
+Untuk mengambil alamat memori dari variable biasa mengunakan ampersand(`&`) , _address of_ (alamant dari).
+Untuk mengambil nilai dari alamat memory mengunakan asterik (`*`) pada variable , _value pointed by_ (nilai yang ditunjuk oleh).
+
+```go
+var nama string = "E. Kartini"
+  // E. Kartini
+var alamatNama *string = &nama
+  // alamat dari variable nama
+var namadariAlamat string = *alamatNama
+  // nilai
+
+```
+Analogi bila anda bingung bahasa manusia, berikut penjelasan sedikit formal :
+```
+jika 
+p = 2  (p menampung nilai 2)
+q = &p (q adalah alamat dari p)
+maka
+p == *q (karena q berisi alamat p, *q menunjuk nilai pada alamat q : p)
+*q == p
+&p == q ( alamat p sama dengan p)
+q == &p ( q sama dengan alamat p)
+``` 
+
+Contoh dalam penerapan sederhana.
+```go
+func add(a *int,b *int)int{
+	return *a + *b
+}
+
+func main() {
+	var a,b int = 4,5
+	fmt.Println(add(&a,&b))
+}
+```
+
+Kenapa harus mengunakan *<tipe data > sesuai dengan nilai yang disimpan? ini untuk memastikan tipe data dari nilai yang diakses sesuai dan kita mengetahui tipe datanya.
+
+#### Manipulasi nilai melalui Pointer
+Untuk memanipulasi pointer, kita perlu memanggil(`*`) nilai kemudian mem-_assign_ (`=`) nilai baru didalamnya
+
+```go
+var nama string = "E. Kartini"
+var alamat *string = &nama
+
+*alamat = "Elisabeth Kartini"
+// nama = "Elisabeth Kartini"
+// serupa dengan p == *q / *q == p
+
+fmt.Println(nama == *alamat) // true :)
+```
+
 [WIP]
