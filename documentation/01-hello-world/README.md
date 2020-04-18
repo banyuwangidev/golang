@@ -18,8 +18,9 @@ kita akan bahas lebih dalam tentang package di chapter packages.
 
 ### Import
 
-> Deskripsi dalam progres
+Import ini berguna untuk mengunakan paket lain, seperti file go dalam folder lain, paket pustaka standar dan paket pustaka pihak ke-3.
 
 ### func Main()
 
-> Deskripsi dalam progres
+fungsi main adalah fungsi yang akan dipanggil pertama kali (entry point) saat program dijalankan.
+maka seluruh kebutuhan program untuk berjalan harus di panggil oleh fungsi main agar berjalan.
