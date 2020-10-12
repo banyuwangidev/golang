@@ -68,15 +68,17 @@ Untuk mengoperasikan suatu nilai kita perlu operator yang sesuai dengan kaidah e
 
 ### Ekspresi Aritmatika
 
+> float32 dipakai untuk mewakili semua jenis float : float32/float64
+
 Ekspresi ini umum dijumpai , seperti menghitung domba saat mau tidur dan menambah hari libur.
 
 Berikut contoh ekspresi arimatika pada golang:
 | Tipe Data | Symbol | Arti | Contoh|
 |--|--|--|--|
 |`int`,`float32`,`string`  | `+` | penjumlahan(`int`&`float32`) concat(`string`)| `"a"+"b"`,`2+3`|
-|`int`,`float`| `-`|pengurangan| `2-1`,`2.1-0.5` |
-|`int`,`float`| `*`|perkalian| `2*1`,`3.14*22` |
-|`int`,`float`| `/`|pembagian| `2/1`,`2.3/4` |
+|`int`,`float32`| `-`|pengurangan| `2-1`,`2.1-0.5` |
+|`int`,`float32`| `*`|perkalian| `2*1`,`3.14*22` |
+|`int`,`float32`| `/`|pembagian| `2/1`,`2.3/4` |
 |`int`| `%`|modulus| `2%1` |
 
 ### Expresi Relasional
@@ -86,8 +88,12 @@ Berbeda dengan ekspresi matematik yang merupakan hasil manipulasi dan perubahan 
 
 | Tipe Data | Symbol | Arti | Contoh|
 |--|--|--|--|
-|||||
-**[WIP]**
+|`int`,`float32`|`>`|Lebih besar dari|`2 > 1`|
+|`int`,`float32`|`<`|Lebih kecil dari|`3 < 4` |
+|`int`,`float32`|`>=`|Lebih besar dari sama dengan|`4 >= 5`|
+|`int`,`float32`|`<=`|Lebih kecil dari sama dengan|` 6 <= 7` |
+|`int`,`float32`,`string`|`==`|Sama dengan| `"Kamu" == "Aku"` |
+|`int`,`float32`,`string`|`!=`|Tidak sama dengan| `"Mantan" != "Kenangan"`|
 
 ### Expresi Lojik
 Expresi ini mengevaluasi kondisi lojik menjadi hasil berupa data lojik, umumnya digunakan untuk pengolahan keputusan.
